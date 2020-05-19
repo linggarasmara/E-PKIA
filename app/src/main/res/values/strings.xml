@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Splash Screen</string>
+    <string name="pilih_keterangan">Keterangan</string>
+
+    <string-array name="Keterangan">
+        <item>Ibu Hamil</item>
+        <item>Ibu Menyusui</item>
+        <item>Wanita Haid</item>
+        <item>Bayi/balita</item>
+
+
+    </string-array>
+
+
+</resources>

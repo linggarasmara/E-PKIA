@@ -10,8 +10,10 @@ import android.view.View;
 
 public class Menu extends AppCompatActivity implements View.OnClickListener {
 
+    private CardView kontrolCard;
     private CardView konsulCard;
     private CardView tipsCard;
+    private CardView jaminanCard;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,9 +23,13 @@ public class Menu extends AppCompatActivity implements View.OnClickListener {
         //define card
         konsulCard = (CardView) findViewById(R.id.konsul_card);
         tipsCard = (CardView) findViewById(R.id.tips_card);
+        kontrolCard = (CardView) findViewById(R.id.kontrol_card);
+        jaminanCard = (CardView) findViewById(R.id.jaminan_card);
         //add click listener
         konsulCard.setOnClickListener(this);
         tipsCard.setOnClickListener(this);
+        kontrolCard.setOnClickListener(this);
+        jaminanCard.setOnClickListener(this);
     }
 
     @Override
@@ -41,6 +47,15 @@ public class Menu extends AppCompatActivity implements View.OnClickListener {
         switch (v.getId()){
             case R.id.tips_card:
                 intent = new Intent(this, Tips.class);startActivity(intent);break;
+
+            default:break;
+        }
+
+
+
+        switch (v.getId()){
+            case R.id.jaminan_card:
+                intent = new Intent(this,cekjaminan.class);startActivity(intent);break;
 
             default:break;
         }

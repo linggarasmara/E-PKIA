@@ -51,6 +51,13 @@ public class Menu extends AppCompatActivity implements View.OnClickListener {
             default:break;
         }
 
+        switch (v.getId()){
+            case R.id.kontrol_card:
+                intent = new Intent(this, reminder.class);startActivity(intent);break;
+
+            default:break;
+        }
+
 
 
         switch (v.getId()){
